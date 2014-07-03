@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="camera_entries">
+        <item>红米相机</item>
+        <item>酷派相机</item>
+    </string-array>
+    <string-array name="camera_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="vold_entries">
+        <item >外置存储</item>
+        <item >内置存储</item>
+    </string-array>
+    <string-array name="vold_values">
+        <item >0</item>
+        <item >1</item>
+    </string-array>
+</resources>

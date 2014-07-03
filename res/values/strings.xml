@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stock_settings">Stock Settings</string>
+    <string name="engineermode_settings">EngineerMode</string>
+    <string name="schedulepoweronoff_settings">Schedule power on off</string>
+    <string name="camera_sound_switch">Camera Sound Switch</string>
+    <string name="camera_sound">Camera Sound</string>
+    <string name="record_sound">Video Record Sound</string>
+    <string name="focus_sound">Focus Sound</string>
+    <string name="mipop">MIPop</string>
+    <string name="default_camera">Default Camera</string>
+    <string name="Hongmi_camera">Now is MIUI Camera</string>
+    <string name="CP_camera">Now is CP Camera</string>
+    <string name="author">Author</string>
+    <string name="xs">Xs</string>
+    <string name="radioinfo">Network Selecting</string>
+    <string name="crt">CRT</string>
+    <string name="camera_sound_warning">Warning:Disable camera sound is illegal in some countries!</string>
+    <string name="myappscreenmask">My App Screen Mask</string>
+    <string name="system">Settings</string>
+    <string name="flash_recovery">Flash Recovery</string>
+    <string name="flash_recovery_warning">Warning:Flash Recovery Will Reboot To Recovery Mode!</string>
+    <string name="confirm">Warning!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="switch_vold">Switch Vold</string>
+    <string name="External_sdcard">Now is External Sdcard,click will reboot phone</string>
+    <string name="Internal_sdcard">Now is Internal Sdcard,click will reboot phone</string>
+</resources>
