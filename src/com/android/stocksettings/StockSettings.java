@@ -50,7 +50,7 @@ public class StockSettings extends PreferenceActivity implements OnPreferenceCha
         
 	//在程序启动时验证值是否正确
         if ((!this.MOD_DEVICE.equals("8297_xs")) || (!this.XS.equals("weibo.com/acexs"))) {
-        	Toast.makeText(getApplicationContext(), "您可能是盗版ROM受害者，请前往MIUI官网下载正版ROM，作者XS！",
+        	Toast.makeText(getApplicationContext(), "您可能是盗版ROM受害者，请前往MIUI官网下载正版ROM，认准作者XS！",
         	Toast.LENGTH_SHORT).show();
         	finish();
 		}
