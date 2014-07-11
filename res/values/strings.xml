@@ -26,4 +26,5 @@
     <string name="switch_vold">Switch Vold</string>
     <string name="External_sdcard">Now is External Sdcard,click will reboot phone</string>
     <string name="Internal_sdcard">Now is Internal Sdcard,click will reboot phone</string>
+    <string name="led_settings">Led Settings</string>
 </resources>

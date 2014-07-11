@@ -3,15 +3,15 @@ package com.android.stocksettings;
 import java.io.DataOutputStream;
 import android.util.Log;
 
-public class RootCmd
-{
+public class RootCmd {
 	private static final String LOG_TAG = "StockSettings";
+
 	public static int RunRootCmd(String paramString) {
 		try {
 			Log.i(LOG_TAG, paramString);
 			Process localProcess = Runtime.getRuntime().exec("su");
-			DataOutputStream localDataOutputStream =
-				new DataOutputStream(localProcess.getOutputStream());
+			DataOutputStream localDataOutputStream = new DataOutputStream(
+					localProcess.getOutputStream());
 			String str = paramString + "\n";
 			localDataOutputStream.writeBytes(str);
 			localDataOutputStream.flush();
@@ -19,10 +19,9 @@ public class RootCmd
 			localDataOutputStream.flush();
 			localProcess.waitFor();
 			return localProcess.exitValue();
-			}
-		catch (Exception localException) {
+		} catch (Exception localException) {
 			localException.printStackTrace();
-			}
-		return 1;
 		}
+		return 1;
+	}
 }

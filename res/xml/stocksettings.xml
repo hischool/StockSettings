@@ -39,6 +39,14 @@
                 android:action="android.intent.action.MAIN" 
                 android:targetClass="com.mediatek.schpwronoff.AlarmClock" />
         </Preference>
+        <Preference
+            android:title="@string/led_settings"
+            android:key="led">
+            <intent 
+                android:targetPackage="com.android.settings_ex" 
+                android:action="android.intent.action.MAIN" 
+                android:targetClass="com.android.settings_ex.Settings$LedSettingsActivity" />
+        </Preference>
         <PreferenceScreen 
             android:title="@string/radioinfo" 
             android:key="radioinfo_settings">

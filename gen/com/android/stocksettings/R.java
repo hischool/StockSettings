@@ -41,6 +41,7 @@ public final class R {
         public static final int flash_recovery=0x7f060012;
         public static final int flash_recovery_warning=0x7f060013;
         public static final int focus_sound=0x7f060006;
+        public static final int led_settings=0x7f06001a;
         public static final int mipop=0x7f060007;
         public static final int myappscreenmask=0x7f060010;
         public static final int no=0x7f060016;

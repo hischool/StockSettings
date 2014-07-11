@@ -26,4 +26,5 @@
     <string name="switch_vold">默认存储切换</string>
     <string name="External_sdcard">当前默认存储卡为外置SD卡,你可选择内置SD卡作为默认存储卡，选择后会自动重启</string>
     <string name="Internal_sdcard">当前默认存储卡为内置SD卡,你可选择外置SD卡作为默认存储卡，选择后会自动重启</string>
+    <string name="led_settings">呼吸灯开关</string>
 </resources>
