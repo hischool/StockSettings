@@ -14,9 +14,10 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/stock_settings">
+        
         <activity 
             android:label="@string/stock_settings" 
-            android:name="StockSettings" 
+            android:name=".StockSettings" 
             android:exported="false" 
             android:process="com.android.settings">
             <intent-filter>
@@ -25,13 +26,17 @@
                 <action android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        
         <activity
             android:label="@string/camera_sound_switch"
-            android:name="CameraSound">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
+            android:name=".CameraSound">
         </activity>
+        
+        <activity
+            android:label="@string/kill_app"
+            android:name=".KillApp">
+        </activity>
+        
     </application>
 
 </manifest>

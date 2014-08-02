@@ -1,95 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen android:title="@string/stock_settings"
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-    <PreferenceCategory 
-        android:title="@string/system">
-        <CheckBoxPreference 
-            android:title="@string/crt" 
-            android:key="allow_crt_lockscreen" />
-        <Preference 
-            android:title="@string/myappscreenmask" 
-            android:key="myappscreenmask">
-            <intent 
-                android:targetPackage="cn.mixiaoxiao.myappscreenmask" 
-                android:action="android.intent.action.MAIN" 
-                android:targetClass="cn.mixiaoxiao.myappscreenmask.MainActivity" />
-        </Preference>
-        <Preference 
-            android:title="@string/mipop" 
-            android:key="mipop">
-            <intent 
-                android:targetPackage="com.android.mipop" 
-                android:action="android.intent.action.MAIN" 
-                android:targetClass="com.android.mipop.MIPopActivity" />
-        </Preference>
-        <Preference 
-            android:title="@string/engineermode_settings" 
-            android:key="engineermode_settings">
-            <intent 
-                android:targetPackage="com.mediatek.engineermode" 
-                android:action="android.intent.action.MAIN" 
-                android:targetClass="com.mediatek.engineermode.EngineerMode" />
-        </Preference>
-        <Preference 
-            android:title="@string/schedulepoweronoff_settings" 
-            android:key="schedulepoweronoff_settings">
-            <intent 
-                android:targetPackage="com.mediatek.schpwronoff" 
-                android:action="android.intent.action.MAIN" 
-                android:targetClass="com.mediatek.schpwronoff.AlarmClock" />
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/stock_settings" >
+
+    <PreferenceCategory android:title="@string/system" >
+        <CheckBoxPreference
+            android:key="allow_crt_lockscreen"
+            android:title="@string/crt" />
+
+        <Preference
+            android:key="myappscreenmask"
+            android:title="@string/myappscreenmask" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="cn.mixiaoxiao.myappscreenmask.MainActivity"
+                android:targetPackage="cn.mixiaoxiao.myappscreenmask" />
         </Preference>
         <Preference
-            android:title="@string/led_settings"
-            android:key="led">
-            <intent 
-                android:targetPackage="com.android.settings_ex" 
-                android:action="android.intent.action.MAIN" 
-                android:targetClass="com.android.settings_ex.Settings$LedSettingsActivity" />
+            android:summary="@string/kill_app_summary"
+            android:title="@string/kill_app" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.stocksettings.KillApp"
+                android:targetPackage="com.android.stocksettings" />
         </Preference>
-        <PreferenceScreen 
-            android:title="@string/radioinfo" 
-            android:key="radioinfo_settings">
-            <intent 
-                android:targetPackage="com.mediatek.engineermode" 
-                android:action="android.intent.action.MAIN" 
-                android:targetClass="com.mediatek.engineermode.networkselect.NetworkSelectActivity" />
+        <Preference
+            android:key="mipop"
+            android:title="@string/mipop" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.mipop.MIPopActivity"
+                android:targetPackage="com.android.mipop" />
+        </Preference>
+        <Preference
+            android:key="engineermode_settings"
+            android:title="@string/engineermode_settings" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.mediatek.engineermode.EngineerMode"
+                android:targetPackage="com.mediatek.engineermode" />
+        </Preference>
+        <Preference
+            android:key="schedulepoweronoff_settings"
+            android:title="@string/schedulepoweronoff_settings" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.mediatek.schpwronoff.AlarmClock"
+                android:targetPackage="com.mediatek.schpwronoff" />
+        </Preference>
+        <Preference
+            android:key="led"
+            android:title="@string/led_settings" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings_ex.Settings$LedSettingsActivity"
+                android:targetPackage="com.android.settings_ex" />
+        </Preference>
+
+        <PreferenceScreen
+            android:key="radioinfo_settings"
+            android:title="@string/radioinfo" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.mediatek.engineermode.networkselect.NetworkSelectActivity"
+                android:targetPackage="com.mediatek.engineermode" />
         </PreferenceScreen>
-        <Preference 
-            android:title="@string/camera_sound_switch" 
-            android:key="camera_sound_switch" 
-            android:summary="@string/camera_sound_warning">
-            <intent 
-                android:targetPackage="com.android.stocksettings" 
-                android:action="android.intent.action.MAIN" 
-                android:targetClass="com.android.stocksettings.CameraSound" />
+
+        <Preference
+            android:key="camera_sound_switch"
+            android:summary="@string/camera_sound_warning"
+            android:title="@string/camera_sound_switch" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.stocksettings.CameraSound"
+                android:targetPackage="com.android.stocksettings" />
         </Preference>
-        <Preference 
-            android:title="@string/flash_recovery"
+        <Preference
+            android:key="flash_recovery"
             android:summary="@string/flash_recovery_warning"
-            android:key="flash_recovery">
+            android:title="@string/flash_recovery" >
         </Preference>
-        <ListPreference 
+
+        <ListPreference
+            android:defaultValue="0"
             android:entries="@array/vold_entries"
-            android:title="@string/switch_vold"
-            android:key="switch_vold" 
-            android:defaultValue="0" 
-            android:entryValues="@array/vold_values"/>
-        <ListPreference 
-            android:entries="@array/camera_entries" 
-            android:title="@string/default_camera" 
-            android:key="camera_change" 
-            android:defaultValue="0" 
-            android:entryValues="@array/camera_values" />
+            android:entryValues="@array/vold_values"
+            android:key="switch_vold"
+            android:title="@string/switch_vold" />
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/camera_entries"
+            android:entryValues="@array/camera_values"
+            android:key="camera_change"
+            android:title="@string/default_camera" />
     </PreferenceCategory>
-    <PreferenceCategory 
-        android:title="@string/author">
-        <Preference 
-            android:title="@string/xs" 
-            android:key="xs">
-            <intent 
-                android:action="android.intent.action.VIEW" 
+    <PreferenceCategory android:title="@string/author" >
+        <Preference
+            android:key="xs"
+            android:title="@string/xs" >
+            <intent
+                android:action="android.intent.action.VIEW"
                 android:data="http://weibo.com/acexs" />
         </Preference>
     </PreferenceCategory>
+
 </PreferenceScreen>
