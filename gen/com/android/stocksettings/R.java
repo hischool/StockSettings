@@ -44,11 +44,14 @@ public final class R {
         public static final int kill_app=0x7f06001b;
         public static final int kill_app_browser=0x7f060022;
         public static final int kill_app_email=0x7f060020;
+        public static final int kill_app_fm=0x7f060023;
         public static final int kill_app_gamecenter=0x7f060021;
         public static final int kill_app_music=0x7f06001f;
         public static final int kill_app_summary=0x7f06001c;
         public static final int kill_app_summary_off=0x7f06001e;
         public static final int kill_app_summary_on=0x7f06001d;
+        public static final int kill_app_warning=0x7f060024;
+        public static final int kill_app_warning_summary=0x7f060025;
         public static final int led_settings=0x7f06001a;
         public static final int mipop=0x7f060007;
         public static final int myappscreenmask=0x7f060010;

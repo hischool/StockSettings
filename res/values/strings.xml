@@ -35,4 +35,7 @@
     <string name="kill_app_email">邮件</string>
     <string name="kill_app_gamecenter">游戏中心</string>
     <string name="kill_app_browser">浏览器</string>
+    <string name="kill_app_fm">收音机</string>
+    <string name="kill_app_warning">警告</string>
+    <string name="kill_app_warning_summary">OTA的时候要把所有程序全部解冻才能保证OTA成功</string>
 </resources>

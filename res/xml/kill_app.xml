@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <Preference
+        android:title="@string/kill_app_warning"
+        android:summary="@string/kill_app_warning_summary">
+    </Preference>
 
     <CheckBoxPreference
         android:defaultValue="false"
@@ -19,6 +24,12 @@
         android:summaryOff="@string/kill_app_summary_off"
         android:summaryOn="@string/kill_app_summary_on"
         android:title="@string/kill_app_browser" />
+        <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="kill_app_fm"
+        android:summaryOff="@string/kill_app_summary_off"
+        android:summaryOn="@string/kill_app_summary_on"
+        android:title="@string/kill_app_fm" />
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="kill_app_gamecenter"
