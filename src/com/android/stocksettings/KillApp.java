@@ -33,27 +33,34 @@ public class KillApp extends PreferenceActivity {
 	public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen,
 			Preference preference) {
 		if (preference == mKillAppMusic) {
+			RootCmd.RunRootCmd("busybox mount -o remount,rw /system");
 			if (mKillAppMusic.isChecked()) {
 				RootCmd.RunRootCmd("mv /system/app/Music.apk /system/app/Music.bak");
 			} else {
 				RootCmd.RunRootCmd("mv /system/app/Music.bak /system/app/Music.apk");
 			}
 		}
+
 		if (preference == mKillAppEmail) {
+			RootCmd.RunRootCmd("busybox mount -o remount,rw /system");
 			if (mKillAppEmail.isChecked()) {
 				RootCmd.RunRootCmd("mv /system/app/Email.apk /system/app/Email.bak");
 			} else {
 				RootCmd.RunRootCmd("mv /system/app/Email.bak /system/app/Email.apk");
 			}
 		}
+
 		if (preference == mKillAppBrowser) {
+			RootCmd.RunRootCmd("busybox mount -o remount,rw /system");
 			if (mKillAppBrowser.isChecked()) {
 				RootCmd.RunRootCmd("mv /system/app/Browser.apk /system/app/Browser.bak");
 			} else {
 				RootCmd.RunRootCmd("mv /system/app/Browser.bak /system/app/Browser.apk");
 			}
 		}
+
 		if (preference == mKillAppGameCenter) {
+			RootCmd.RunRootCmd("busybox mount -o remount,rw /system");
 			if (mKillAppGameCenter.isChecked()) {
 				RootCmd.RunRootCmd("mv /system/app/GameCenter.apk /system/app/GameCenter.bak");
 			} else {
