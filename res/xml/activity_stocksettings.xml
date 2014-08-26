@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <Preference
+            android:title="@string/myappscreenmask" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="cn.mixiaoxiao.myappscreenmask.MainActivity"
+                android:targetPackage="cn.mixiaoxiao.myappscreenmask" />
+        </Preference>
+
+    <Preference
+        android:title="@string/mipop" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.android.mipop.MIPopActivity"
+            android:targetPackage="com.android.mipop" />
+    </Preference>
+    
+    <Preference 
+        android:title="@string/gesture" >
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.xs.stocksettings.GestureActivity"
+            android:targetPackage="com.xs.stocksettings" >
+        </intent>
+    </Preference>
+    
+    <Preference
+        android:key="about"
+        android:title="@string/about"
+        android:summary="© Oneplus MIUI Tools | Powered by Xs" >
+    </Preference>
+
+</PreferenceScreen>

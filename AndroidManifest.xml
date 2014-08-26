@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xs.stocksettings"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" ></uses-permission>
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:theme="@style/Theme.Light"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".StockSettingsActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".GestureActivity" >
+        </activity>
+        
+        <!-- 系统开机时恢复手势数据 -->
+        <receiver android:name=".RestoreGesture" >
+            <intent-filter android:priority="0" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>
