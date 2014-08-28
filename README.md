@@ -1,15 +1,12 @@
-##StockSettingsÊÇÊ²Ã´£¿
-Ò»¸ö×¨ÎªMIUI¶øÉúµÄ°²×¿³ÌĞò
+##StockSettingsæ˜¯ä»€ä¹ˆï¼Ÿ
+ä¸€ä¸ªä¸“ä¸ºMIUIè€Œç”Ÿçš„å®‰å“é™„åŠ ç¨‹åº
 
-##Coolpad8297·ÖÖ§
-¿áÅÉ´óÉñF1
+
 
 ##Services.patch
-CRT¿ª¹Ø-¿ò¼Ü²ãSmaliÔ´Âë(4.1 4.2²âÊÔÍ¨¹ı) 
+CRTå¼€å…³-æ¡†æ¶å±‚Smaliæºç (4.1 4.2æµ‹è¯•é€šè¿‡) 
 
-##Ô¤ÀÀ
-![Screenshot](Screenshot_1.png)
-![Screenshot](Screenshot_2.png)
 
-##×÷Õß
+
+##ä½œè€…
 * [xs](http://weibo.com/acexs)
