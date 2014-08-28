@@ -1,0 +1,35 @@
+diff --git a/services.jar.out/smali/com/android/server/power/DisplayPowerController.smali b/services.jar.out/smali/com/android/server/power/DisplayPowerController.smali
+index 989e2f9..1eb519e 100644
+--- a/services.jar.out/smali/com/android/server/power/DisplayPowerController.smali
++++ b/services.jar.out/smali/com/android/server/power/DisplayPowerController.smali
+@@ -4749,15 +4749,27 @@
+     goto/16 :goto_a
+ 
+     :cond_24
+-    iget-object v6, p0, Lcom/android/server/power/DisplayPowerController;->mPowerState:Lcom/android/server/power/DisplayPowerState;
++    iget-object v6, p0, Lcom/android/server/power/DisplayPowerController;->mContext:Landroid/content/Context;
++
++    invoke-virtual {v6}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
++
++    move-result-object v6
++
++    const-string v8, "allow_crt_lockscreen"
+ 
+-    iget-boolean v8, p0, Lcom/android/server/power/DisplayPowerController;->mElectronBeamFadesConfig:Z
++    const/4 v10, 0x0
++
++    invoke-static {v6, v8, v10}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
++
++    move-result v6
+ 
+-    if-eqz v8, :cond_25
++    if-nez v6, :cond_25
+ 
+     const/4 v7, 0x2
+ 
+     :cond_25
++    iget-object v6, p0, Lcom/android/server/power/DisplayPowerController;->mPowerState:Lcom/android/server/power/DisplayPowerState;
++
+     invoke-virtual {v6, v7}, Lcom/android/server/power/DisplayPowerState;->prepareElectronBeam(I)Z
+ 
+     move-result v6

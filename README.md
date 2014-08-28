@@ -4,6 +4,9 @@
 ##Coolpad8297分支
 酷派大神F1
 
+##Services.patch
+CRT开关-框架层Smali源码(4.1 4.2测试通过) 
+
 ##预览
 ![Screenshot](Screenshot_1.png)
 ![Screenshot](Screenshot_2.png)
